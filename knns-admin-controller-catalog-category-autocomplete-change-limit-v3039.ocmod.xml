@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modification>
+	<id><![CDATA[[OCMOD] Admin > Change category limit in autocomplete function]]></id>
+	<name><![CDATA[Admin > Change category limit in autocomplete function]]></name>
+	<code>knns-admin-controller-catalog-category-autocomplete-change-limit</code>
+	<version>0.1.0</version>
+	<author><![CDATA[<font color="#7F458C"><b>kanenas.net (aka Nikolas Branis)</b></font> - nbran@kanenas.net]]></author>
+	<link>https://kanenas.net/</link>
+	<file path="admin/controller/catalog/category.php" error="log">
+		<operation error="skip">
+			<search><![CDATA['limit'       => 5]]></search>
+			<add position="replace"><![CDATA[				'limit'       => 10]]></add>
+		</operation>
+	</file>
+</modification>
